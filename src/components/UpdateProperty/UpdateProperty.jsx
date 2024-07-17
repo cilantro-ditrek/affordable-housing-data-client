@@ -137,6 +137,7 @@ class UpdateProperty extends Component {
 		}
 		//this.state.verifications[field].verified = verifyVal;
 		this.setState(Object.assign(this.state.verifications,{[field]:{verified:verifyVal}}));
+		this.handleSave();
 	}
 
 	renderGroups(propertyDataGroupEdit=false) {
